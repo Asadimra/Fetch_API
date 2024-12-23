@@ -1,7 +1,6 @@
-// https://jsonplaceholder.typicode.com/todos
 import Link from "next/link";
 
-export default async function comments() {
+export default async function User() {
   const url = await fetch(" https://jsonplaceholder.typicode.com/users")
   const res = await url.json()
   return (
