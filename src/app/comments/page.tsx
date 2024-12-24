@@ -7,7 +7,7 @@ export default async function Comments(){
             <h1 className="text-center">All Comments</h1>
            {res.map((cm:any)=>
         (
-          <div>
+          <div  key={cm.id} >
             <Link href={`${cm.id}`}>
             <h1>{`comments author: ${cm.name}`}</h1>
             </Link>

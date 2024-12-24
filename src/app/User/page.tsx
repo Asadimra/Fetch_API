@@ -8,7 +8,7 @@ export default async function User() {
             <h1 className="text-center">ALL Users</h1>
 
     {res.map((us:any)=>(
-      <div>
+      <div key={us.id}>
         <Link href={`${us.id}`}>
         <h1 className="">{`User name: ${us.name}`} </h1>
         </Link>

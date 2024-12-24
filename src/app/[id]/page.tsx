@@ -1,6 +1,6 @@
 const dynamic = async  (props:any)=>{
     console.log(props)
-    const url = await fetch(`https://jsonplaceholder.typicode.com/comments/${props.params.body}`)
+    const url = await fetch(`https://jsonplaceholder.typicode.com/comments/${props.params.id}`)
     const res = await url.json()
     console.log("single",res)
     return(
